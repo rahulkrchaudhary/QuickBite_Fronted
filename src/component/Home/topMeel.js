@@ -1,0 +1,38 @@
+export const topMeel=[
+    {
+        image:"https://media.istockphoto.com/id/501137061/photo/chicken-biryani-1-4.jpg?s=612x612&w=0&k=20&c=4YH3uPuv2iNyNTemn5bTxCyst608o3WDZNyATnibDsg=",
+        title:"Biryani"
+    },
+    {
+        image:"https://media.istockphoto.com/id/1303119992/photo/pizza_margerita.jpg?s=612x612&w=0&k=20&c=0HZZMC10ySBYvMVAKUNzknkQ1E74q8NKwTV5_K6WK6M=",
+        title:"Pizza"
+    },
+    {
+        image:"https://media.istockphoto.com/id/1206323282/photo/juicy-hamburger-on-white-background.jpg?s=612x612&w=0&k=20&c=K0DxyiChLwewXcCy8aLjjOqkc8QXPgQMAW-vwRCzqG4="
+        ,title:"Burger"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2020/03/10/03/49/red-velvet-cake-4917734_1280.jpg"
+        ,title:"Cake"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2024/01/23/10/02/thali-8527370_1280.jpg"
+        ,title:"Thali"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_1280.jpg"
+        ,title:"Sandwich"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2022/05/09/03/51/sweet-7183474_1280.jpg"
+        ,title:"Sweets"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2014/05/30/06/25/ice-cream-sundae-357972_1280.jpg"
+        ,title:"Ice Cream"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2020/01/09/04/21/strawberry-4751821_1280.jpg"
+        ,title:"Dessert"
+    }
+]

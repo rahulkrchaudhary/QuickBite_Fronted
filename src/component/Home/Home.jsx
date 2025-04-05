@@ -64,6 +64,7 @@ export const Home = () => {
             <p className='text-2xl font-semibold text-grey-400 py-5 text-center'>Top Meals</p>
             <MultiItemCarousel/>
         </section>
+        { restaurant.restaurants.length >0 && (
         <section className='px-5 lg:px-20 pt-5'>
             <h1 className='text-2xl font-semibold text-grey-400 pb-5 text-center mb-5'>Best Restaurant</h1>
             <div className='flex flex-wrap items-center justify-around gap-5'>
@@ -71,13 +72,13 @@ export const Home = () => {
                     restaurant.restaurants.map((item)=><RestaurantCard item={item}/>)
                 }
             </div>
-        </section>
-        <section className='px-5 lg:px-20 pt-5'>
+        </section>)}
+        {restaurant.events.lenght >0 && <section className='px-5 lg:px-20 pt-5'>
             <h1 className='text-2xl font-semibold text-grey-400 pb-5 text-center mb-5'>Events</h1>
             <div className='flex flex-wrap items-center justify-around gap-5'>
                 {restaurant.events.map((item)=><EventCard item={item}/>)}
             </div>
-        </section>
+        </section>}
 
         <section>
         <p className='text-2xl font-semibold text-grey-400 py-5 text-center mt-5'>Project Details</p>

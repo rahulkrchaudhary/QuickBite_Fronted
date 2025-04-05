@@ -73,7 +73,7 @@ export const Home = () => {
                 }
             </div>
         </section>)}
-        {restaurant.events.lenght >0 && <section className='px-5 lg:px-20 pt-5'>
+        {restaurant.events.length >0 && <section className='px-5 lg:px-20 pt-5'>
             <h1 className='text-2xl font-semibold text-grey-400 pb-5 text-center mb-5'>Events</h1>
             <div className='flex flex-wrap items-center justify-around gap-5'>
                 {restaurant.events.map((item)=><EventCard item={item}/>)}

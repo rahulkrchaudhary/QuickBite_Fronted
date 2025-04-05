@@ -12,10 +12,6 @@ const orderStatus=[
   {label:"Completed", value:"COMPLETED"},
 ]
 export const Orders = () => {
-  // const [filterValue, setFilterValue]=useState()
-  // const handleFilter=(e, value)=>{
-  //   setFilterValue(value)
-  // }
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();

@@ -14,7 +14,6 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteFoodAction, getMenuItemsByRestaurantId, updateMenuItemsAvailability } from '../../component/State/Menu/Action';
 
-// const orders=[1,1,1,1]
 
 export const MenuTable = () => {
   const navigate= useNavigate()

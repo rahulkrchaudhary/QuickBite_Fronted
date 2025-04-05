@@ -31,10 +31,8 @@ export const CratItem = ({item}) => {
     <div className='px-5'>
         <div className='lg:flex items-center lg:space-x-5'>
             <div>
-                {/* <img className='w-[5rem] h-[5rem] object-cover' src="https://b.zmtcdn.com/data/dish_photos/558/ddee6164a94608cc39d01bb69d4a4558.jpg?fit=around|130:130&crop=130:130;*,*" alt="" /> */}
                 <img 
                     className='w-[5rem] h-[5rem] object-cover' 
-                    // src="https://b.zmtcdn.com/data/o2_assets/bf2d0e73add1c206aeeb9fec762438111727708719.png"
                     src={item.food.images[0]} 
                     alt="" />
 

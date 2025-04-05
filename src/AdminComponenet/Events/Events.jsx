@@ -1,7 +1,6 @@
 import { Button, Grid, TextField } from '@mui/material'
 import React, { useEffect } from 'react'
 import Box from '@mui/material/Box';
-// import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { DateTimePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
@@ -50,13 +49,6 @@ export const Events = () => {
         {restaurant.restaurantsEvents.map((item) => (
           <EventCard item={item} />
         ))}
-        {/* <div>
-          <img
-          className="rounded-md w-[25rem] h-[25-rem] object-cover"
-            src="https://images.pexels.com/photos/5638732/pexels-photo-5638732.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-          />
-        </div> */}
       </div>
         <Modal
           open={open}

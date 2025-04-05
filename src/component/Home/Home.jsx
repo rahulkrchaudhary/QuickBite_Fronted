@@ -69,7 +69,7 @@ export const Home = () => {
             <h1 className='text-2xl font-semibold text-grey-400 pb-5 text-center mb-5'>Best Restaurant</h1>
             <div className='flex flex-wrap items-center justify-around gap-5'>
                 {
-                    restaurant.restaurants.map((item)=><RestaurantCard item={item}/>)
+                    restaurant.restaurants.map((item)=><RestaurantCard item={item} open={item.open}/>)
                 }
             </div>
         </section>)}

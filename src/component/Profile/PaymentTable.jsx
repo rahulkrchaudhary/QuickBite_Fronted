@@ -14,7 +14,6 @@ export const PaymentTable = () => {
   }, [])
   // console.log("----", payment.payment)
 
-
   // const paymentData = Array(4).fill({ id: 1, orderId: 1, date: "25-12-25", amount: "₹ 255", status: "Pending" });
 
   return (
@@ -47,8 +46,13 @@ export const PaymentTable = () => {
                 >
                   
                   <TableCell sx={{ textAlign: "center" }}>{item.orderId}</TableCell>
-                  <TableCell sx={{ textAlign: "center" }}>{item.createdAt}</TableCell>
-                  <TableCell sx={{ textAlign: "center" }}>{item.amount}</TableCell>
+                  <TableCell sx={{ textAlign: "center" }}>
+                  {new Date(item.createdAt).toLocaleString('en-GB', {
+                              dateStyle: 'medium',
+                              timeStyle: 'short',
+                            })}
+                  </TableCell>
+                  <TableCell sx={{ textAlign: "center" }}>₹ {item.amount/100}</TableCell>
                   <TableCell sx={{ textAlign: "center" }}>{item.paymentStatus}</TableCell>
                 </TableRow>
               ))} 

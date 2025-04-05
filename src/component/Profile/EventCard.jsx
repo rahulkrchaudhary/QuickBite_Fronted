@@ -24,8 +24,18 @@ export const EventCard = ({item}) => {
                         <LocationOnIcon/>
                         <p className='ml-2'>{item.location}</p>
                     </div>
-                    <p className='text-sm text-blue-500'>{item?.startedAt}</p>
-                    <p className='text-sm text-red-500'>{item?.endsAt}</p>
+                    <p className='text-sm text-blue-500'>{
+                        new Date(item?.startedAt).toLocaleString('en-GB', {
+                            dateStyle: 'medium',
+                            timeStyle: 'short',
+                          })
+                    }</p>
+                    <p className='text-sm text-red-500'>{
+                        new Date(item?.endsAt).toLocaleString('en-GB', {
+                            dateStyle: 'medium',
+                            timeStyle: 'short',
+                          })
+                    }</p>
                 </div>
             </CardContent>
             {/* {true && <CardActions>
